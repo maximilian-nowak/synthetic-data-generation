@@ -1,0 +1,24 @@
+generated_image_format: jpg
+num_images: 30
+min_size: 28
+max_size: 30
+min_num_obj: 2
+max_num_obj: 5
+max_iou: 0
+data_augmentation_options: []
+use_3D_transformation: false
+cropper: grabcut
+blender:
+  - seamless
+fit_object_brightness_to_scene: true
+proportions: relative
+multiprocessing: true
+preset_path: ''#'C:\Users\Eduard-Desktop\Anaconda\synthetic-data-generation\download\tmpx5rub092\placement_records'
+ignored_saved_size: false
+generate_placement_mask: true
+reset_foreground: true
+use_pyramid_blender_for_reblending: false
+use_placement_area: true
+raise_exceptions: true
+random_seed: 42
+label_format: yolo
