@@ -81,22 +81,25 @@ def create_annotation_yolo(output_dir: str, idx: int, image: np.ndarray, results
     for bnd in results:
         cls = bnd['classname']
         xmin = bnd['bbox'][0]
-        xmax = bnd['bbox'][1]
-        ymin = bnd['bbox'][2]
-        ymax = bnd['bbox'][3]
-
-        width = xmax - xmin
-        height = ymax - ymin
+        ymin = bnd['bbox'][1]
+        width = bnd['bbox'][2]
+        height = bnd['bbox'][3]
+        
+        xmax = xmin + width
+        ymax = ymin + height
 
         xmin, xmax = [max(min(x, img_width), 0) for x in [xmin, xmax]]  # clip width in range [0, width]
         ymin, ymax = [max(min(y, img_height), 0) for y in [ymin, ymax]]  # clip height in range [0, height]
-
+        
+        width_clipped = xmax - xmin
+        height_clipped = ymax - ymin
+        
         assert xmin != xmax and ymin != ymax
 
-        x1 = str((xmin + width / 2) / img_width)
-        y1 = str((ymin + height / 2) / img_height)
-        w = str(width / img_width)
-        h = str(height / img_height)
+        x1 = str((xmin + width_clipped / 2) / img_width)
+        y1 = str((ymin + height_clipped / 2) / img_height)
+        w = str(width_clipped / img_width)
+        h = str(height_clipped / img_height)
 
         label_file.append(str(cls) + " " + x1 + " " + y1 + " " + w + " " + h + "\n")
 
