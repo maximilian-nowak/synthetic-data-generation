@@ -16,9 +16,9 @@ multiprocessing: true
 preset_path: ''#'C:\Users\Eduard-Desktop\Anaconda\synthetic-data-generation\download\tmpx5rub092\placement_records'
 ignored_saved_size: false
 generate_placement_mask: true
-reset_foreground: true
+reset_foreground: false
 use_pyramid_blender_for_reblending: false
-use_placement_area: true
+use_placement_area: false
 raise_exceptions: true
 random_seed: 42
 label_format: yolo

@@ -33,8 +33,12 @@ The pipeline requires a folder with objects and backgrounds as an input. The str
 		* *image2.jpg*
 		* ...
 * backgrounds/
-    * *image1.jpg*
+	* *image1.jpg*
+	* *image1_front.png*
+	* *image1_placement-area.png*
 	* *image2.jpg*
+	* *image2_front.png*
+	* *image2_placement-area.png*
 	* ...
 
 

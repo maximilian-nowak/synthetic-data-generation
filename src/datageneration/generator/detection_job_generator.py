@@ -48,7 +48,7 @@ class DetectionJobGenerator:
         """
         Generates data with single thread
         """
-        for job in tqdm(joblist):
+        for job in tqdm(joblist, desc="Generating images"):
             self.generate_data(job)
 
     def generate_data_multi(self, joblist: List[Tuple]):
@@ -78,7 +78,7 @@ class DetectionJobGenerator:
         """
         Generates data with single process from records
         """
-        for job in tqdm(job_list):
+        for job in tqdm(job_list, desc="Generating images from records"):
             self.generate_data_from_record(job)
 
     def generate_data_multi_from_records( self, job_list):
