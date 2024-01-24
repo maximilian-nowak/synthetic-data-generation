@@ -64,7 +64,8 @@ python3 run.py --source traffic_objects_package/ --config configs/config_traffic
 
 After generating a dataset, it is advisable brush up the format and structure of those files.
 
-1. Give each image/label pair a unique identifier
+1. Give each image/label pair a unique identifier:
+
     This is particularly useful when you plan on combining this dataset later on with training data from other sources. This way there won't be any name conflicts in the project.
 
     ```
@@ -72,7 +73,8 @@ After generating a dataset, it is advisable brush up the format and structure of
     python ../../scripts/uudify_frames.py 
     ```
 
-2. Create a stats.txt
+2. Create a stats.txt:
+
     Add a short txt file to your dataset explaining the nature of the included data, e.g. a quick overview of all class objects could be useful in the future.
 
     ```
