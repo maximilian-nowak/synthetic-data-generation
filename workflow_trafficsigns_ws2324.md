@@ -45,7 +45,7 @@ Each folder represents a class label. Objects in the `other` folder will be used
         * *image2_placement-area.png*
         * ...
 
-Before starting the process of generating a dataset, make sure that this folder only contains the objects and classes that you want to include in your dataset (e.g. for a dataset containing only traffic lights, this folder should only list `0/` and `1/` - optionally `others` as well).
+Before starting the process of generating a dataset, make sure that this folder only contains the objects and classes that you want to be included in your dataset (e.g. for a dataset containing only traffic lights, this folder should only list `0/` and `1/` - optionally `others` as well).
 
 ## configuration
 
