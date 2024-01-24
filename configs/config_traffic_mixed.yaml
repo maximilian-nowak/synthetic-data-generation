@@ -1,0 +1,25 @@
+generated_image_format: jpg
+num_images: 4000
+min_size: 10
+max_size: 25
+min_num_obj: 2
+max_num_obj: 4
+max_iou: 0
+data_augmentation_options: []
+use_3D_transformation: true
+cropper: grabcut
+blender:
+  - seamless
+  - alpha
+fit_object_brightness_to_scene: true
+proportions: relative
+multiprocessing: true
+preset_path: ''#'/home/mnowak/sam/synthetic-data-generation/data/placement_records'
+ignored_saved_size: false
+generate_placement_mask: true
+reset_foreground: false
+use_pyramid_blender_for_reblending: false
+use_placement_area: true
+raise_exceptions: false
+random_seed: 42
+label_format: yolo
