@@ -81,3 +81,7 @@ After generating a dataset, it is advisable brush up the format and structure of
     cd ./download/dataset-name
     python ../../scripts/count_objects.py 
     ```
+
+## Statistics to WS23/24
+
+For anyone interested in an overview of all our produced datasets is invited to have a look at `/docs/dataset_stats_ws2324`.
