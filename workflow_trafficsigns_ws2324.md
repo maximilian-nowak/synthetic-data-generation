@@ -57,4 +57,4 @@ The folder `config` contains three different config files:
 
 ## Generating datasets
 
-python3 run.py --source data/ --config configs/config_traffic_mixed.yaml
+python3 run.py --source traffic_objects_package/ --config configs/config_traffic_mixed.yaml
