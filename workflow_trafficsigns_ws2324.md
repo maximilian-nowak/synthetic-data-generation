@@ -68,7 +68,7 @@ After generating a dataset, it is advisable brush up the format and structure of
     This is particularly useful when you plan on combining this dataset later on with training data from other sources. This way there won't be any name conflicts in the project.
 
     ```
-    cd /download/dataset-name
+    cd ./download/dataset-name
     python ../../scripts/uudify_frames.py 
     ```
 
@@ -76,6 +76,6 @@ After generating a dataset, it is advisable brush up the format and structure of
     Add a short txt file to your dataset explaining the nature of the included data, e.g. a quick overview of all class objects could be useful in the future.
 
     ```
-    cd /download/dataset-name
+    cd ./download/dataset-name
     python ../../scripts/count_objects.py 
     ```
