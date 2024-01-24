@@ -49,12 +49,12 @@ Before starting the process of generating a dataset, make sure that this folder 
 
 ## configuration
 
-The folder `config` contains three different config files:
+The folder `configs` contains three different config files:
 
 - config_trafficsigns.yaml: optimized for generating only traffic signs (no lights)
 - config_traffilights.yaml: optimized for generating only traffic lights (no signs)
 - config_traffix_mixed.yaml: optimized for generating all traffic objects
 
-## Generating datasets
+## generating datasets
 
 python3 run.py --source traffic_objects_package/ --config configs/config_traffic_mixed.yaml
