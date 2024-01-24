@@ -82,11 +82,12 @@ After generating a dataset, it is advisable brush up the format and structure of
     python ../../scripts/count_objects.py 
     ```
 ## Mask creation
+    
 Takes road images and gives masks back
 
-    ```
-    python3 scripts/mask_creation.py input_folder output_folder
-    ```
+```
+python3 scripts/mask_creation.py input_folder output_folder
+```
 
 ## Statistics to WS23/24
 
