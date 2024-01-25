@@ -32,7 +32,7 @@ Each folder represents a class label. Objects in the `other` folder will be used
             * *overtaking-prohibited1.jpg*
             * ...
         * 7/
-            * *overtaking-prohibited1.jpg*
+            * *overtaking-permitted.jpg*
             * ...
         * other/
             * *disruptive-object1.jpg*

@@ -11,12 +11,9 @@ names = ['trafficlight_green','trafficlight_red', 'pit_in','pit_out', 'park_para
 occurrences = [0,0,0,0,0,0,0,0]
     
 def countLabels(input_filename):
-    green = False
     with open(input_filename, 'r') as input_file:
         for line in input_file.readlines():
             class_label = line.split()[0]
-            if int(class_label) == 0:
-                green = True
             occurrences[int(class_label)] += 1
 
 def main():
